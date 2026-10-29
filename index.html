@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>机电传动控制 · 交互式学习平台 | 武汉理工大学 机电工程学院</title>
+<meta name="description" content="《机电传动控制》（第六版）交互式学习平台：6 台电机 3D 拆解、10 章知识点、知识树、AI 助教答疑。授课教师：吴超群。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='4' y='4' width='92' height='92' rx='20' fill='%230f3fa8'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'>机</text></svg>">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=Barlow+Semi+Condensed:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="vendor/katex/katex.min.css">
+<link rel="stylesheet" href="styles.css?v=9">
+</head>
+<body>
+
+<header class="topbar" id="topbar">
+  <div class="brand">
+    <img src="assets/wut-logo.png" alt="武汉理工大学" class="brand-wut">
+    <img src="assets/mec-logo.png" alt="机电工程学院" class="brand-mec">
+  </div>
+  <div class="title-block">
+    <h1>机电传动控制 · 交互式学习平台</h1>
+    <span class="sub">授课老师：<b class="teacher">吴超群</b><span class="divider">|</span>武汉理工大学 机电工程学院</span>
+  </div>
+  <nav class="nav" id="nav">
+    <a href="#/" data-nav="home">首页</a>
+    <a href="#/lessons" data-nav="lessons">课程</a>
+    <a href="#/lab" data-nav="lab">电机模型</a>
+    <a href="#/tree" data-nav="tree">知识树</a>
+    <button class="nav-ai" id="nav-ai">🤖 AI 助教</button>
+  </nav>
+  <div class="top-progress" id="top-progress" title="学习进度">
+    <span class="tp-num" id="tp-num">0/52</span>
+    <div class="tp-bar"><i id="tp-fill"></i></div>
+  </div>
+</header>
+
+<main id="app"></main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand"><span class="logo-chip sm">机</span> 机电传动控制 · 交互式学习平台</div>
+    <p>授课教师：吴超群 · 武汉理工大学 机电工程学院</p>
+    <p class="footer-dim">基于《机电传动控制》（第六版 · 陈冰 冯清秀 邓星钟 等编著）· 6 台电机 3D 模型 · 10 章知识树 · AI 助教答疑</p>
+  </div>
+</footer>
+
+<div id="modal-root"></div>
+<div id="chatbot-root"></div>
+
+<script src="vendor/three.min.js"></script>
+<script src="vendor/OrbitControls.js"></script>
+<script src="vendor/GLTFLoader.js"></script>
+<script src="vendor/katex/katex.min.js"></script>
+
+<script src="data.js?v=9"></script>
+<script src="content.js?v=9"></script>
+<script src="content-data1.js?v=9"></script>
+<script src="content-data2.js?v=9"></script>
+<script src="motors3d.js?v=9"></script>
+<script src="app.js?v=9"></script>
+</body>
+</html>
